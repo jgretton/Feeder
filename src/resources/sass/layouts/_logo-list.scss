@@ -1,0 +1,55 @@
+.logo-list{
+    height:190px;
+    // min-height:180px;
+    max-width: 100%;
+    position: relative;
+    background-color: #F5F5F5;
+}
+
+.logo-list__wrapper{
+    max-width:1143px;
+    height:46px;
+    position: relative;
+    // background-color: lightcoral;
+
+    @include push--auto;
+    @include center;
+    @include flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+
+    @media(max-width: 650px){
+        width:80%;
+        height: 200px;
+        padding-top: 40px;
+    }
+
+}
+
+.logo-item{
+    // flex: 0 0 12%;
+
+    svg{
+    fill: #DADADA;
+    transition: $transition;
+        &:hover{
+            fill : black;
+            cursor: pointer;
+            transition: $transition;
+        }
+
+        @media(max-width: 650px){
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    @media(max-width: 650px){
+        width:25%;
+        padding-bottom: 20px;
+        align-self: center;
+    }
+}

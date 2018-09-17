@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feeder</title>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="resources/css/main.css">
+</head>
+<body>
+<div class="content" id="home">
+<!-- Header Start -->
+<header class="header">
+    <!-- Logo Start -->
+    <div class="logo">
+        <a href="#home"><svg class="svg" viewBox="0 0 144 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke-width="1" fill-rule="evenodd"><g id="Index" transform="translate(-100.000000, -27.000000)"><g id="Header"><g id="FeederLogo" transform="translate(100.000000, 27.000000)"><path d="M16.4,4.8 C16.4,5.1 16.1,5.4 15.9,5.4 L6.9,5.4 L11.5,10.9 L13,10.9 C13.4,10.9 13.7,11.1 13.7,11.4 L13.7,14.7 C13.7,15 13.4,15.3 13,15.3 L4.4,15.3 L4.4,24.6 C4.4,24.9 4.2,25.2 3.9,25.2 L0.6,25.2 C0.3,25.2 0,24.9 0,24.6 L0,10.9 L5.7,10.9 L0,4 L0,1.6 C0,1.3 0.3,1 0.6,1 L15.9,1 C16.2,1 16.4,1.3 16.4,1.6 L16.4,4.8 L16.4,4.8 Z" id="Shape"></path><path d="M41.2,24.5 C41.2,24.8 40.9,25.1 40.7,25.1 L25.4,25.1 C25.1,25.1 24.8,24.8 24.8,24.5 L24.8,1.5 C24.8,1.2 25.1,0.9 25.4,0.9 L40.2,0.9 C40.5,0.9 40.8,1.2 40.8,1.5 L40.8,4.8 C40.8,5.1 40.5,5.3 40.2,5.3 L29.2,5.3 L29.2,10.8 L39.6,10.8 C39.9,10.8 40.2,11 40.2,11.3 L40.2,14.6 C40.2,14.9 39.9,15.2 39.6,15.2 L29.2,15.2 L29.2,20.7 L40.7,20.7 C41,20.7 41.2,21 41.2,21.3 L41.2,24.5 L41.2,24.5 Z" id="Shape"></path><path d="M66.3,24.5 C66.3,24.8 66,25.1 65.8,25.1 L50.5,25.1 C50.2,25.1 49.9,24.8 49.9,24.5 L49.9,1.5 C49.9,1.2 50.2,0.9 50.5,0.9 L65.3,0.9 C65.6,0.9 65.9,1.2 65.9,1.5 L65.9,4.8 C65.9,5.1 65.6,5.3 65.3,5.3 L54.3,5.3 L54.3,10.8 L64.7,10.8 C65,10.8 65.3,11 65.3,11.3 L65.3,14.6 C65.3,14.9 65,15.2 64.7,15.2 L54.3,15.2 L54.3,20.7 L65.8,20.7 C66.1,20.7 66.3,21 66.3,21.3 L66.3,24.5 L66.3,24.5 Z" id="Shape"></path><path d="M75.5,25.1 C75.2,25.1 74.9,24.8 74.9,24.4 L74.9,1.6 C74.9,1.3 75.2,1.1 75.5,1.1 L81.5,1.1 C85,1.1 88.4,2.6 90.8,5.5 C95,10.6 94.3,18.2 89.2,22.4 C87,24.2 84.2,25.1 81.5,25.1 L75.5,25.1 L75.5,25.1 Z M81.5,5.4 L79.3,5.4 L79.3,20.7 L81.5,20.7 C83.2,20.7 85,20.1 86.4,19 C89.7,16.3 90.2,11.5 87.5,8.2 C86,6.4 83.7,5.4 81.5,5.4 L81.5,5.4 Z" id="Shape"></path><path d="M118.4,24.5 C118.4,24.8 118.1,25.1 117.9,25.1 L102.6,25.1 C102.3,25.1 102,24.8 102,24.5 L102,1.5 C102,1.2 102.3,0.9 102.6,0.9 L117.4,0.9 C117.7,0.9 118,1.2 118,1.5 L118,4.8 C118,5.1 117.7,5.3 117.4,5.3 L106.5,5.3 L106.5,10.8 L116.9,10.8 C117.2,10.8 117.5,11 117.5,11.3 L117.5,14.6 C117.5,14.9 117.2,15.2 116.9,15.2 L106.5,15.2 L106.5,20.7 L118,20.7 C118.3,20.7 118.5,21 118.5,21.3 L118.5,24.5 L118.4,24.5 Z" id="Shape"></path><path d="M142.5,24.3 C142.6,24.4 142.6,24.5 142.6,24.6 C142.6,24.9 142.4,25.2 142.1,25.2 L138.3,25.2 C138.1,25.2 137.9,25.1 137.9,24.9 L137.8,24.8 L133,16.3 L132.4,15.2 L130.3,15.2 L130.3,24.5 C130.3,24.8 130,25.1 129.8,25.1 L126.5,25.1 C126.2,25.1 125.9,24.8 125.9,24.5 L125.9,10.9 L129.9,10.9 L126.2,4.3 L125.9,3.8 L125.9,1.6 C125.9,1.3 126.2,1.1 126.5,1.1 L134.7,1.1 C137.2,1.1 139.5,1.8 141,3.1 C142.5,4.4 143.4,6.2 143.4,8.2 C143.4,11.1 141.3,14.1 137.2,15 L137.3,15.3 L137.9,16.4 L142.5,24.3 L142.5,24.3 Z M135,10.9 C135.3,10.9 135.6,10.9 135.8,10.8 C138.1,10.5 139.1,9.3 139.1,8.1 C139.1,6.8 137.8,5.4 134.7,5.4 L131.9,5.4 L134.4,9.8 L135,10.9 L135,10.9 Z" id="Shape"></path></g></g></g></g></svg></a>
+    </div>
+    <!-- Logo End -->
+
+    <!-- Header__nav Start -->
+    <nav class="header__nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li>
+                <input type="text" class="search__input">
+                <svg  class="search" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke-width="1" fill-rule="evenodd"><g id="Index" transform="translate(-1476.000000, -31.000000)"><g id="Header"><g id="Menu" transform="translate(801.000000, 31.000000)"><g id="Search" transform="translate(675.000000, 0.000000)"><path d="M22.472,21.4906667 L15.5746667,14.5933333 C16.8746667,13.0773333 17.6666667,11.112 17.6666667,8.96266667 C17.6666667,4.184 13.7786667,0.296 9,0.296 C6.68533333,0.296 4.508,1.19733333 2.86933333,2.83333333 C1.23333333,4.47066667 0.332,6.648 0.333333333,8.96266667 C0.333333333,13.7413333 4.22133333,17.6293333 9,17.6293333 C11.1493333,17.6293333 13.116,16.8373333 14.632,15.5373333 L21.5293333,22.4346667 L22.472,21.4906667 L22.472,21.4906667 Z M9,16.296 C4.95733333,16.296 1.66666667,13.0066667 1.66666667,8.96266667 C1.66533333,7.00266667 2.428,5.16133333 3.81333333,3.77733333 C5.19733333,2.392 7.04,1.62933333 9,1.62933333 C13.0426667,1.62933333 16.3333333,4.91866667 16.3333333,8.96266667 C16.3333333,13.0053333 13.0426667,16.296 9,16.296 L9,16.296 Z" id="Shape"></path></g></g></g></g></g></svg></li>
+
+        </ul>
+    </nav>
+    <!-- Header__nav end -->
+
+    <div class="mobile__menu">
+        <div class="bar"></div>
+    </div>
+</header>
+<!-- Header End -->
+
+<!-- Hero Start  -->
+<section class="hero">
+    <div class="hero__content">
+        <div class="content__header">
+            <h2>feeder is here</h2>
+        </div>
+
+        <div class="content__lead"> 
+        <h1> Lorem ipsum dolor sit, amet consectetur.</h1>
+        </div>
+
+        <div class="content__tag">
+            <p>Well, the way they make shows is, they make one show.</p>
+        </div>
+    </div>
+
+    <button><a href="#about">
+        <svg width="31px" height="31px" viewBox="0 0 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Index" transform="translate(-777.000000, -808.000000)" fill="#FFFFFF"><g id="WelcomeBanner"><g id="arrow-down" transform="translate(777.500000, 808.000000)"><polygon id="Shape" points="29.708 15.708 15 30.414 0.292 15.708 1.706 14.294 14 26.586 14 0 16 0 16 26.586 28.292 14.294 29.708 15.708"></polygon></g></g></g></g></svg></a>
+    </button>
+</section>
+<!-- Hero End -->
+
+<!-- About Start -->
+<section class="about" id="about">
+    <div class="about__content">
+        <div class="content__title">
+            <h1>About Feeder</h1>
+        </div>
+        <div class="content__info">
+            <p>Mauris lacinia porta faucibus. Fusce eu est ac eros vulputate mollis in ac felis. Aenean commodo scelerisque mi sed imperdiet. Donec at hendrerit nisi, eget vestibulum nisi. Sed sit amet magna luctus, facilisis erat quis, sagittis ligula. Aenean dignissim velit quis leo consequat ultricies. Proin quis pretium justo. Vestibulum at eros nisl. Fusce lobortis erat ante, eu cursus sapien molestie at. Pellentesque placerat ante diam, et euismod lacus dictum vel. Phasellus vitae sollicitudin mi.</p>
+        </div>
+    </div>
+</section>
+<!-- About End -->
+
+<!-- Introduction Start -->
+<section class="introduction">
+    
+    <div class="introduction__left">
+
+    </div>
+
+    <div class="introduction__right">
+
+        <div class="right__content">
+            <div class="content__title">
+                <h1>Why Choose Feeder</h1>
+            </div>
+            <div class="content__info">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. </br></br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip . </br></br>
+                         ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Introduction End -->
+
+<!-- Portfolio Start -->
+<section class="portfolio" id="portfolio">
+
+    <div class="portfolio__header">
+
+        <div class="header__content">
+
+            <div class="content__title">
+                <h1>Portfolio</h1>
+            </div>
+            <div class="content__info">
+                <p>Mauris lacinia porta faucibus. Fusce eu est ac eros vulputate mollis in ac .</p>
+            </div>
+            <div class="content__nav">
+                <ul>
+                    <li><button class="content__nav-item" data-rel="all">all</button></li>
+                    <li><button class="content__nav-item" data-rel="design">design</button></li>
+                    <li><button class="content__nav-item" data-rel="identity">identity</button></li>
+                    <li><button class="content__nav-item" data-rel="photography">photography</button></li>
+                    <li><button class="content__nav-item" data-rel="web-design">web design</button></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="portfolio__content">
+
+        <div class="portfolio__tile all scale-anm indentity" id="tile_1">
+            <div class="tile__hidden-content">
+
+                <div class="hidden-content-wrap">
+
+                    <div class="hidden-content__title">
+                        <h1>Image Title</h1>
+                    </div>
+                    <div class="hidden-content__info">
+                        <p>Print / Photography</p>
+                    </div>
+
+                </div>
+                <!-- hidden-content-wrap end -->
+
+            </div>
+            <!-- tile hidden content end -->
+            
+        </div>
+        <!-- Portfolio Tile End -->
+
+        <div class="portfolio__tile all scale-anm web-design " id="tile_2">
+            <div class="tile__hidden-content">
+
+                <div class="hidden-content-wrap">
+
+                    <div class="hidden-content__title">
+                        <h1>Image Title</h1>
+                    </div>
+                    <div class="hidden-content__info">
+                        <p>Print / Photography</p>
+                    </div>
+
+                </div>
+                <!-- hidden-content-wrap end -->
+
+            </div>
+            <!-- tile hidden content end -->
+            
+        </div>
+        <!-- Portfolio Tile End -->
+
+        <div class="portfolio__tile all scale-anm photography" id="tile_3">
+            <div class="tile__hidden-content">
+
+                <div class="hidden-content-wrap">
+
+                    <div class="hidden-content__title">
+                        <h1>Image Title</h1>
+                    </div>
+                    <div class="hidden-content__info">
+                        <p>Print / Photography</p>
+                    </div>
+
+                </div>
+                <!-- hidden-content-wrap end -->
+
+            </div>
+            <!-- tile hidden content end -->
+            
+        </div>
+        <!-- Portfolio Tile End -->
+
+        <div class="portfolio__tile all scale-anm design" id="tile_4">
+            <div class="tile__hidden-content">
+
+                <div class="hidden-content-wrap">
+
+                    <div class="hidden-content__title">
+                        <h1>Image Title</h1>
+                    </div>
+                    <div class="hidden-content__info">
+                        <p>Print / Photography</p>
+                    </div>
+
+                </div>
+                <!-- hidden-content-wrap end -->
+
+            </div>
+            <!-- tile hidden content end -->
+            
+        </div>
+        <!-- Portfolio Tile End -->
+
+        <div class="portfolio__tile all scale-anm web-design" id="tile_5">
+            <div class="tile__hidden-content">
+
+                <div class="hidden-content-wrap">
+
+                    <div class="hidden-content__title">
+                        <h1>Image Title</h1>
+                    </div>
+                    <div class="hidden-content__info">
+                        <p>Print / Photography</p>
+                    </div>
+
+                </div>
+                <!-- hidden-content-wrap end -->
+
+            </div>
+            <!-- tile hidden content end -->
+            
+        </div>
+        <!-- Portfolio Tile End -->
+
+        <div class="portfolio__tile all scale-anm photography" id="tile_6">
+            <div class="tile__hidden-content">
+
+                <div class="hidden-content-wrap">
+
+                    <div class="hidden-content__title">
+                        <h1>Image Title</h1>
+                    </div>
+                    <div class="hidden-content__info">
+                        <p>Print / Photography</p>
+                    </div>
+
+                </div>
+                <!-- hidden-content-wrap end -->
+
+            </div>
+            <!-- tile hidden content end -->
+            
+        </div>
+        <!-- Portfolio Tile End -->
+
+        <div class="portfolio__tile all scale-anm identity" id="tile_7">
+            <div class="tile__hidden-content">
+
+                <div class="hidden-content-wrap">
+
+                    <div class="hidden-content__title">
+                        <h1>Image Title</h1>
+                    </div>
+                    <div class="hidden-content__info">
+                        <p>Print / Photography</p>
+                    </div>
+
+                </div>
+                <!-- hidden-content-wrap end -->
+
+            </div>
+            <!-- tile hidden content end -->
+            
+        </div>
+        <!-- Portfolio Tile End -->
+
+        <div class="portfolio__tile all scale-anm design" id="tile_8">
+            <div class="tile__hidden-content">
+
+                <div class="hidden-content-wrap">
+
+                    <div class="hidden-content__title">
+                        <h1>Image Title</h1>
+                    </div>
+                    <div class="hidden-content__info">
+                        <p>Print / Photography</p>
+                    </div>
+
+                </div>
+                <!-- hidden-content-wrap end -->
+
+            </div>
+            <!-- tile hidden content end -->
+            
+        </div>
+        <!-- Portfolio Tile End -->
+
+    </div>
+    
+    <div class="portfolio__footer">
+        <button class="button center">
+            View All
+        </button>
+    </div>
+
+</section>
+<!-- Portfolio End -->
+
+<!-- Slider Start -->
+<section class="slider" id="features">
+
+    <!-- Start Slide -->
+    <div class="slider__wrapper">
+            <div class="slider__content-left">
+                <div class="content__title">
+                    <h1>Then they show that show to the 
+                            people who make shows</h1>
+                </div>
+                <div class="content__info">
+                    <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother’s.</p>
+                </div>
+            </div>
+            <div class="slider__content-right">
+                <img src="resources/images/camera_1.png" alt="">
+            </div>
+        </div>
+        <!-- End Slide -->
+
+    <!-- Start Slide -->
+    <div class="slider__wrapper">
+            <div class="slider__content-left">
+                <div class="content__title">
+                    <h1>Then they show that show to the 
+                            people who make shows</h1>
+                </div>
+                <div class="content__info">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus a commodi consequuntur sapiente reprehenderit quisquam modi similique sit. Laudantium voluptatum, non sunt necessitatibus alias ipsam itaque blanditiis est maiores? Laboriosam.</p>
+                </div>
+            </div>
+            <div class="slider__content-right">
+                <img src="resources/images/watches.png" alt="">
+            </div>
+        </div>
+        <!-- End Slide -->
+
+    <!-- Start Slide -->
+    <div class="slider__wrapper">
+            <div class="slider__content-left">
+                <div class="content__title">
+                    <h1>Then they show that show to the 
+                            people who make shows</h1>
+                </div>
+                <div class="content__info">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, quas quam veniam facilis laboriosam, commodi nihil perferendis eaque sed, fugiat magni sequi sunt vero rem eveniet cupiditate itaque officiis quisquam.</p>
+                </div>
+            </div>
+            <div class="slider__content-right">
+                <img src="resources/images/laptop.png" alt="">
+            </div>
+        </div>
+        <!-- End Slide -->
+
+
+    <div class="arrow arrow--left">
+            <svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Index" transform="translate(-40.000000, -3613.000000)" fill="#333333"> <g id="FeaturedProject" transform="translate(0.000000, 3341.000000)"> <g id="Arrows" transform="translate(40.000000, 272.000000)"> <g id="arrow-left"> <polygon id="Shape" points="34.8297203 18.6013333 5.12461285 18.6013333 19.3955103 32.942 17.7538694 34.5916667 0.680340537 17.4346667 17.7561914 0.275333333 19.3978322 1.925 5.12461285 16.268 34.8297203 16.268"></polygon> </g> </g> </g> </g> </g></svg>
+    </div>
+    <div class="arrow arrow--right">
+            <svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Index" transform="translate(-1525.000000, -3614.000000)" fill="#333333"> <g id="FeaturedProject" transform="translate(0.000000, 3341.000000)"> <g id="Arrows" transform="translate(40.000000, 272.000000)"> <g id="arrow-right" transform="translate(1485.170044, 0.744397)"> <polygon id="Shape" points="34.1493798 17.4346667 17.0735289 34.594 15.4318881 32.9443333 29.7027855 18.6036667 -2.06233373e-15 18.6036667 -2.06233373e-15 16.2703333 29.7051075 16.2703333 15.4318881 1.925 17.0735289 0.275333333"></polygon> </g> </g> </g> </g> </g></svg>
+    </div>
+</section>
+<!-- Slider End -->
+
+<!-- Services Start -->
+<section class="services" id="services">
+    
+    <div class="services__content-wrapper">
+        
+        <div class="content__title">
+            <h1>What We Do</h1>
+        </div>
+        <div class="content__info">
+            <p>Mauris lacinia porta faucibus. Fusce eu est ac eros vulputate mollis in ac felis. Aenean commodo scelerisque mi sed imperdiet. Donec at hendrerit nisi, eget vestibulum nisi. Sed sit amet magna luctus, facilisis erat quis.</p>
+        </div>
+
+        <div class="services__tile-wrap">
+
+            <div class="services__tile">
+                <div class="tile__svg">
+                        <svg width="48px" height="47px" viewBox="0 0 48 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Index" transform="translate(-385.000000, -4283.000000)" fill="#3498DB"> <g id="Services" transform="translate(230.000000, 4032.000000)"> <g id="BRAND-IDENTITY" transform="translate(0.000000, 249.000000)"> <g id="vector" transform="translate(155.750000, 0.000000)"> <path d="M42.6672,15.7872 L41.1312,17.3232 C37.8032,14.4224 33.536,12.8 29.0992,12.8 C26.112,12.8 23.1264,13.568 20.5664,14.9328 L27.0512,8.448 C27.5632,8.7888 28.16,8.96 28.7584,8.96 C29.6112,8.96 30.4656,8.6192 31.1472,7.936 C32.512,6.5712 32.512,4.4368 31.1472,3.072 C30.464,2.3888 29.6112,2.048 28.7584,2.048 C27.9056,2.048 27.0512,2.3888 26.3696,3.072 C25.2608,4.2672 25.0896,5.9728 25.8576,7.2528 L17.6656,15.4448 L16.1296,13.9088 L11.9488,18.0896 L13.4848,19.6256 L5.1216,27.9888 C4.6096,27.648 4.0128,27.4768 3.4144,27.4768 C2.5616,27.4768 1.7072,27.8176 1.0256,28.5008 C-0.3392,29.8656 -0.3392,32 1.0256,33.3648 C1.7088,33.9616 2.5616,34.304 3.4144,34.304 C4.2672,34.304 5.1216,33.9632 5.8032,33.28 C6.912,32.1712 7.0832,30.464 6.3152,29.0992 L12.8,22.6144 C9.3872,29.1856 10.1552,37.3776 15.1888,43.1792 L13.6528,44.8 L17.92,48.9808 L22.1008,44.8 L17.92,40.6192 L16.4688,42.0704 C11.52,36.2672 11.264,27.9056 15.4448,21.7616 L16.128,22.4448 L20.3952,18.264 L19.6272,17.5808 C22.3584,15.6176 25.6864,14.5936 29.0992,14.5936 C33.1104,14.5936 36.864,16.0448 39.936,18.6048 L38.4,20.056 L42.6672,24.2368 L46.848,20.056 L42.6672,15.7888 L42.6672,15.7872 Z M19.712,44.8 L17.92,46.592 L16.128,44.8 L17.92,43.008 L19.712,44.8 L19.712,44.8 Z M27.5632,4.352 C27.904,4.0112 28.3312,3.84 28.7584,3.84 C29.1856,3.84 29.6112,4.0112 29.9536,4.352 C30.6368,5.0352 30.6368,6.0592 29.9536,6.7408 C29.6128,7.0816 29.1856,7.2528 28.7584,7.2528 C28.3312,7.2528 27.9056,7.0816 27.5632,6.7408 C26.88,6.144 26.88,5.0336 27.5632,4.352 L27.5632,4.352 Z M4.608,32.0848 C4.2672,32.4256 3.84,32.5968 3.4128,32.5968 C2.9856,32.5968 2.56,32.4256 2.2176,32.0848 C1.8768,31.8288 1.7056,31.4016 1.7056,30.8896 C1.7056,30.4624 1.8768,30.0368 2.2176,29.6944 C2.5584,29.352 2.9856,29.1824 3.4128,29.1824 C3.84,29.1824 4.2656,29.3536 4.608,29.6944 C5.2912,30.3776 5.2912,31.4864 4.608,32.0832 L4.608,32.0848 Z M16.0432,20.0528 L14.2512,18.2608 L16.0432,16.4688 L17.8352,18.2608 L16.0432,20.0528 L16.0432,20.0528 Z M42.6672,21.8448 L40.8752,20.0528 L42.6672,18.2608 L44.4592,20.0528 L42.6672,21.8448 L42.6672,21.8448 Z" id="Shape"></path> </g> </g> </g> </g> </g> </svg>
+                </div>
+                <div class="tile__header">
+                    <h1>Graphic Design</h1>
+                </div>
+                <div class="tile__info">
+                    <p>Lorem Ipsum Proin gravida nibh vel  velit auctor 
+                            aliquet. Aenean sollicitudin, lorem quis bibendum 
+                            auctor, nisi elit consequat ipsum</p>
+                </div>
+            </div>
+            <!-- End Tile -->
+            
+            <div class="services__tile">
+                <div class="tile__svg">
+                        <svg width="46px" height="40px" viewBox="0 0 46 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Index" transform="translate(-776.000000, -4287.000000)" fill="#3498DB"> <g id="Services" transform="translate(230.000000, 4032.000000)"> <g id="WEB-DEVELOPMENT" transform="translate(390.000000, 249.000000)"> <g id="monitor" transform="translate(153.250000, 0.000000)"> <path d="M48.524125,37.262875 L48.524125,6.075875 L3.47425,6.075875 L3.47425,37.262875 L25.13225,37.262875 L25.13225,44.1935 L19.06775,44.1935 L19.06775,45.92575 L32.929,45.92575 L32.929,44.1935 L26.8645,44.1935 L26.8645,37.262875 L48.5225,37.262875 L48.524125,37.262875 Z M5.208125,7.8065 L46.791875,7.8065 L46.791875,35.529 L5.208125,35.529 L5.208125,7.8065 L5.208125,7.8065 Z" id="Shape"></path> </g> </g> </g> </g> </g> </svg>
+                </div>
+                <div class="tile__header">
+                    <h1>web development</h1>
+                </div>
+                <div class="tile__info">
+                    <p>Lorem Ipsum Proin gravida nibh vel  velit auctor 
+                            aliquet. Aenean sollicitudin, lorem quis bibendum 
+                            auctor, nisi elit consequat ipsum</p>
+                </div>
+            </div>
+            <!-- End Tile -->
+            
+            <div class="services__tile">
+                <div class="tile__svg">
+                        <svg width="53px" height="34px" viewBox="0 0 53 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Index" transform="translate(-1163.000000, -4290.000000)"> <g id="Services" transform="translate(230.000000, 4032.000000)"> <g id="BRAND-IDENTITY" transform="translate(780.000000, 249.000000)"> <g id="speaker" transform="translate(152.750000, 0.000000)"> <g id="icomoon-ignore" transform="translate(0.625000, 0.000000)"></g> <path d="M0.590875,20.0126875 L0.590875,32.1416875 L5.78925,32.1416875 L5.78925,42.5384375 L7.5215,42.5384375 L7.5215,32.1416875 L20.84975,32.1416875 L33.50525,42.3824375 L33.50525,9.4615625 L20.770125,20.0126875 L0.590875,20.0126875 L0.590875,20.0126875 Z M2.32475,30.4078125 L2.32475,21.7449375 L9.255375,21.7449375 L9.255375,30.4078125 L2.32475,30.4078125 L2.32475,30.4078125 Z M21.875125,21.3468125 L31.771375,13.1470625 L31.771375,38.7505625 L21.462375,30.4094375 L10.986,30.4094375 L10.986,21.7465625 L21.3925,21.7465625 L21.8735,21.3484375 L21.875125,21.3468125 Z" id="Shape" fill="#3498DB"></path> <path d="M45.496125,10.9890625 L44.24975,12.2354375 C48.304125,15.4090625 50.92525,20.3360625 50.92525,25.8724375 C50.92525,31.5566875 48.161125,36.5958125 43.919875,39.7564375 L45.174375,41.0109375 C49.72275,37.5285625 52.659125,32.0441875 52.659125,25.8724375 C52.659125,19.8501875 49.860875,14.4811875 45.49775,10.9890625 L45.496125,10.9890625 Z" id="Shape" fill="#3498DB"></path> <path d="M39.928875,16.575 L38.6695,17.834375 C41.34425,19.524375 43.130125,22.498125 43.130125,25.8895 C43.130125,29.430375 41.185,32.5195 38.310375,34.162375 L39.573,35.425 C42.746625,33.43275 44.864,29.913 44.864,25.8895 C44.864,22.0155 42.9075,18.601375 39.9305,16.575 L39.928875,16.575 Z" id="Shape" fill="#3498DB"></path> </g> </g> </g> </g> </g> </svg>
+                </div>
+                <div class="tile__header">
+                    <h1>marketing</h1>
+                </div>
+                <div class="tile__info">
+                    <p>Lorem Ipsum Proin gravida nibh vel  velit auctor 
+                            aliquet. Aenean sollicitudin, lorem quis bibendum 
+                            auctor, nisi elit consequat ipsum</p>
+                </div>
+            </div>
+            <!-- End Tile -->
+            
+            <div class="services__tile">
+                <div class="tile__svg">
+                        <svg width="44px" height="36px" viewBox="0 0 44 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Index" transform="translate(-388.000000, -4592.000000)"> <g id="Services" transform="translate(230.000000, 4032.000000)"> <g id="BRAND-IDENTITY" transform="translate(1.000000, 552.000000)"> <g id="film" transform="translate(157.750000, 0.000000)"> <g id="icomoon-ignore"></g> <path d="M0,8.100625 L0,43.89775 L42.61725,43.89775 L42.61725,8.100625 L0,8.100625 L0,8.100625 Z M6.8185,42.19475 L1.704625,42.19475 L1.704625,35.37625 L6.8185,35.37625 L6.8185,42.19475 L6.8185,42.19475 Z M6.8185,33.671625 L1.704625,33.671625 L1.704625,26.853125 L6.8185,26.853125 L6.8185,33.671625 L6.8185,33.671625 Z M6.8185,25.1485 L1.704625,25.1485 L1.704625,18.33 L6.8185,18.33 L6.8185,25.1485 L6.8185,25.1485 Z M6.8185,16.625375 L1.704625,16.625375 L1.704625,9.806875 L6.8185,9.806875 L6.8185,16.625375 L6.8185,16.625375 Z M34.0925,19.465875 L34.0925,42.19475 L8.523125,42.19475 L8.523125,9.806875 L34.0925,9.806875 L34.0925,19.465875 L34.0925,19.465875 Z M40.912625,42.19475 L35.79875,42.19475 L35.79875,35.37625 L40.912625,35.37625 L40.912625,42.19475 L40.912625,42.19475 Z M40.912625,33.671625 L35.79875,33.671625 L35.79875,26.853125 L40.912625,26.853125 L40.912625,33.671625 L40.912625,33.671625 Z M40.912625,25.1485 L35.79875,25.1485 L35.79875,18.33 L40.912625,18.33 L40.912625,25.1485 L40.912625,25.1485 Z M40.912625,16.625375 L35.79875,16.625375 L35.79875,9.806875 L40.912625,9.806875 L40.912625,16.625375 L40.912625,16.625375 Z" id="Shape" fill="#3498DB"></path> <path d="M17.04625,19.11 L17.04625,32.888375 L28.978625,26 L17.04625,19.11 L17.04625,19.11 Z M18.750875,22.062625 L25.569375,26 L18.750875,29.937375 L18.750875,22.06425 L18.750875,22.062625 Z" id="Shape" fill="#3498DB"></path> </g> </g> </g> </g> </g> </svg>
+                </div>
+                <div class="tile__header">
+                    <h1> video production </h1>
+                </div>
+                <div class="tile__info">
+                    <p>Lorem Ipsum Proin gravida nibh vel  velit auctor 
+                            aliquet. Aenean sollicitudin, lorem quis bibendum 
+                            auctor, nisi elit consequat ipsum</p>
+                </div>
+            </div>
+            <!-- End Tile -->
+            
+            <div class="services__tile">
+                <div class="tile__svg">
+                        <svg width="44px" height="34px" viewBox="0 0 44 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Index" transform="translate(-778.000000, -4593.000000)"> <g id="Services" transform="translate(230.000000, 4032.000000)"> <g id="BRAND-IDENTITY" transform="translate(390.500000, 552.000000)"> <g id="camera" transform="translate(153.250000, 0.000000)"> <g id="icomoon-ignore"></g> <path d="M44.191875,14.737125 L37.025625,14.737125 L32.859125,10.560875 C32.85425,10.556 32.849375,10.55275 32.846125,10.547875 L32.838,10.541375 C32.212375,9.92225 31.35275,9.540375 30.402125,9.540375 L21.73925,9.540375 C20.73175,9.540375 19.83475,9.975875 19.201,10.66 L19.19775,10.65025 L15.117375,14.73875 L7.804875,14.73875 C5.890625,14.73875 4.340375,16.290625 4.340375,18.204875 L4.340375,38.99675 C4.340375,40.911 5.89225,42.462875 7.804875,42.462875 L44.19025,42.462875 C46.1045,42.462875 47.656375,40.911 47.656375,38.99675 L47.656375,18.204875 C47.656375,16.290625 46.1045,14.73875 44.19025,14.73875 L44.191875,14.737125 Z M45.92575,38.995125 C45.92575,39.949 45.147375,40.727375 44.191875,40.727375 L7.8065,40.727375 C6.851,40.727375 6.07425,39.949 6.07425,38.995125 L6.07425,18.20325 C6.07425,17.24775 6.852625,16.471 7.8065,16.471 L15.83725,16.471 L18.44375,13.859625 L18.486,13.986375 L20.475,11.834875 C20.811375,11.470875 21.2615,11.271 21.740875,11.271 L30.40375,11.271 C30.862,11.271 31.29425,11.448125 31.633875,11.7845 L36.307375,16.469375 L44.191875,16.469375 C45.147375,16.469375 45.92575,17.246125 45.92575,18.201625 L45.92575,38.9935 L45.92575,38.995125 Z" id="Shape" fill="#3498DB"></path> <path d="M26,16.471 C19.7795,16.471 14.737125,21.51175 14.737125,27.73225 C14.737125,33.95275 19.7795,38.99675 26,38.99675 C32.2205,38.99675 37.262875,33.95275 37.262875,27.73225 C37.262875,21.51175 32.2205,16.471 26,16.471 L26,16.471 Z M26,37.262875 C20.74475,37.262875 16.471,32.9875 16.471,27.73225 C16.471,22.477 20.746375,18.204875 26,18.204875 C31.253625,18.204875 35.529,22.478625 35.529,27.73225 C35.529,32.9875 31.253625,37.262875 26,37.262875 L26,37.262875 Z" id="Shape" fill="#3498DB"></path> <path d="M26,19.9355 C21.692125,19.9355 18.20325,23.424375 18.20325,27.730625 C18.20325,32.036875 21.69375,35.529 26,35.529 C30.30625,35.529 33.79675,32.036875 33.79675,27.730625 C33.79675,23.424375 30.30625,19.9355 26,19.9355 L26,19.9355 Z M26,33.79675 C22.65575,33.79675 19.9355,31.074875 19.9355,27.730625 C19.9355,24.386375 22.65575,21.66775 26,21.66775 C29.34425,21.66775 32.0645,24.386375 32.0645,27.730625 C32.0645,31.074875 29.34425,33.79675 26,33.79675 L26,33.79675 Z" id="Shape" fill="#3498DB"></path> </g> </g> </g> </g> </g> </svg>
+                </div>
+                <div class="tile__header">
+                    <h1>Photography</h1>
+                </div>
+                <div class="tile__info">
+                    <p>Lorem Ipsum Proin gravida nibh vel  velit auctor 
+                            aliquet. Aenean sollicitudin, lorem quis bibendum 
+                            auctor, nisi elit consequat ipsum</p>
+                </div>
+            </div>
+            <!-- End Tile -->
+            
+            <div class="services__tile">
+                <div class="tile__svg">
+                        <svg width="49px" height="50px" viewBox="0 0 49 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Index" transform="translate(-1165.000000, -4586.000000)"> <g id="Services" transform="translate(230.000000, 4032.000000)"> <g id="BRAND-IDENTITY" transform="translate(780.500000, 553.000000)"> <g id="pen" transform="translate(153.250000, 0.000000)"> <g id="icomoon-ignore"></g> <path d="M50.002875,9.42825 L43.095,2.520375 L41.405,4.212 L39.039,1.847625 C38.701,1.509625 38.15175,1.509625 37.81375,1.847625 L23.777,15.886 C23.439,16.224 23.439,16.77325 23.777,17.11125 C23.946,17.28025 24.168625,17.36475 24.389625,17.36475 C24.610625,17.36475 24.83325,17.28025 25.00225,17.11125 L38.426375,3.6855 L40.17975,5.43725 L10.411375,35.204 L12.41825,37.210875 C11.57325,36.79325 10.6535,36.580375 9.73375,36.580375 C8.178625,36.580375 6.6235,37.1735 5.43725,38.35975 C5.315375,38.48 5.198375,38.61 5.08625,38.7465 C5.031,38.8115 4.977375,38.87975 4.927,38.946375 C4.86525,39.02275 4.808375,39.102375 4.753125,39.183625 C4.710875,39.242125 4.668625,39.300625 4.629625,39.359125 C2.110875,43.147 1.997125,50.39125 1.997125,50.39125 C1.997125,50.39125 2.260375,50.40425 2.718625,50.40425 C4.80025,50.40425 10.859875,50.119875 14.03025,46.9495 C15.9185,45.059625 16.29875,42.237 15.1775,39.966875 L17.320875,42.11025 L50.0045,9.426625 L50.002875,9.42825 Z M12.803375,45.725875 C10.869625,47.659625 7.476625,48.325875 5.057,48.555 L9.000875,44.611125 L7.775625,43.385875 L3.9975,47.164 C4.304625,44.85325 4.91725,42.05175 6.0775,40.311375 L6.12625,40.2415 L6.1685,40.181375 C6.205875,40.12775 6.244875,40.070875 6.3115,39.986375 C6.34075,39.949 6.368375,39.91 6.420375,39.849875 C6.49675,39.758875 6.57475,39.671125 6.660875,39.585 C7.4815,38.764375 8.571875,38.312625 9.732125,38.312625 C10.892375,38.312625 11.98275,38.764375 12.803375,39.585 C14.495,41.27825 14.495,44.032625 12.803375,45.725875 L12.803375,45.725875 Z M47.554,9.42825 L37.2775,19.70475 L32.8185,15.247375 L43.095,4.970875 L47.554,9.42825 L47.554,9.42825 Z M31.59325,16.471 L36.05225,20.928375 L17.31925,39.661375 L12.86025,35.204 L31.59325,16.471 L31.59325,16.471 Z" id="Shape" fill="#3498DB"></path> </g> </g> </g> </g> </g> </svg>
+                </div>
+                <div class="tile__header">
+                    <h1>Copywriting</h1>
+                </div>
+                <div class="tile__info">
+                    <p>Lorem Ipsum Proin gravida nibh vel  velit auctor 
+                            aliquet. Aenean sollicitudin, lorem quis bibendum 
+                            auctor, nisi elit consequat ipsum</p>
+                </div>
+            </div>
+            <!-- End Tile -->
+        </div>
+
+    </div>
+
+</section>
+<!-- Services End -->
+
+<!-- Video Start -->
+<section class="video">
+    <div class="play-button">
+        <svg height=64px version=1.1 viewBox="0 0 56 64"width=56px xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink><g id=Page-1 fill=none fill-rule=evenodd stroke=none stroke-width=1><g id=Index transform="translate(-772.000000, -5273.000000)"fill=#FFFFFF><g id=Video transform="translate(0.000000, 5005.000000)"><g id=Play transform="translate(754.250000, 254.250000)"><path d="M21.3595313,19.0462969 L67.138125,45.75 L21.3595313,72.4537031 L21.3595313,19.0462969 L21.3595313,19.0462969 Z M18.3114375,13.7364375 L18.3114375,77.7607031 L73.1885625,45.7471406 L18.3114375,13.7335781 L18.3114375,13.7364375 Z"id=Shape></path></g></g></g></g></svg>
+    </div>
+</section>
+<!-- Video End -->
+
+<!-- Logo-list Start -->
+<section class="logo-list">
+
+    <div class="logo-list__wrapper">
+        <div class="logo-item"><svg height=46px version=1.1 viewBox="0 0 42 46"width=42px xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink><g id=Page-1  fill-rule=evenodd stroke-width=1><g id=Index transform="translate(-228.000000, -5672.000000)"><g id=LogosList transform="translate(0.000000, 5605.000000)"><g id=Logos transform="translate(228.000000, 67.000000)"><g id=html3><path d="M0.0463407146,0 L3.78708561,41.3496929 L20.5799988,45.9425431 L37.4169794,41.3428015 L41.164894,0 L0.0463407146,0 L0.0463407146,0 Z M33.0209943,13.5238277 L33.0032449,13.5238277 L13.3233926,13.5238277 L13.7924831,18.7170899 L32.5531279,18.7170899 L31.1396487,34.2859363 L20.6046556,37.1652434 L20.5941633,37.1686891 L20.5870811,37.1686891 L20.5815726,37.1686891 L10.0359998,34.2859363 L9.31509568,26.3217341 L14.4835718,26.3217341 L14.8500131,30.3700787 L20.5816601,31.8916966 L20.5943382,31.8882509 L26.3292202,30.3631011 L26.9244798,23.78803 L9.08496595,23.78803 L7.69631834,8.45297378 L33.4812537,8.45297378 L33.0209943,13.5238277 L33.0209943,13.5238277 Z"id=Shape></path></g></g></g></g></g></svg></div>
+        <div class="logo-item"><svg height=46px version=1.1 viewBox="0 0 52 46"width=52px xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink><g id=Page-1  fill-rule=evenodd stroke-width=1><g id=Index transform="translate(-376.000000, -5672.000000)"><g id=LogosList transform="translate(0.000000, 5605.000000)"><g id=Logos transform="translate(228.000000, 67.000000)"><g id=css1 transform="translate(148.000000, 0.000000)"><polygon id=Shape points="7.66709611 0.0257758621 5.93834173 8.54796983 41.1448573 8.54796983 40.0439085 14.0528017 4.81515451 14.0528017 3.10994661 22.5737069 38.3131416 22.5737069 36.3499286 32.2922974 22.161162 36.9231293 9.86466694 32.2922974 10.7063027 28.0768534 2.05760009 28.0768534 0 38.3056078 20.3378192 45.9742241 43.7838743 38.3056078 51.520503 0.0257758621"></polygon></g></g></g></g></g></svg></div>
+        <div class="logo-item"><svg height=46px version=1.1 viewBox="0 0 47 46"width=47px xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink><g id=Page-1  fill-rule=evenodd stroke-width=1><g id=Index transform="translate(-534.000000, -5672.000000)"><g id=LogosList transform="translate(0.000000, 5605.000000)"><g id=Logos transform="translate(228.000000, 67.000000)"><g id=fileformat7 transform="translate(306.000000, 0.000000)"><path d="M45.1320687,0 L1.49170785,0 C0.667837607,0 0,0.658108626 0,1.46964856 L0,44.4646581 C0,45.2761981 0.667837607,45.9343067 1.49170785,45.9343067 L45.1320687,45.9343067 C45.9559389,45.9343067 46.6237765,45.2761981 46.6237765,44.4646581 L46.6237765,1.46964856 C46.6237765,0.658108626 45.9559389,0 45.1320687,0 L45.1320687,0 Z M21.4246541,25.5324984 C21.4246541,28.2682492 19.8682061,29.9677508 17.3624352,29.9677508 C15.7886834,29.9677508 14.3823013,29.1900128 13.4023984,27.7778275 C12.9690573,27.1530799 13.1316534,26.3003898 13.7657784,25.8733099 C14.4000526,25.44623 15.2656907,25.6067157 15.6988826,26.2313163 C16.1574336,26.8923642 16.7171224,27.2274441 17.3624352,27.2274441 C17.8724501,27.2274441 18.6432156,27.2274441 18.6432156,25.5326454 L18.6432156,18.5566645 L14.8430898,18.5566645 C14.0750095,18.5566645 13.4523706,17.9432332 13.4523706,17.1865112 C13.4523706,16.4297891 14.0750095,15.8163578 14.8430898,15.8163578 L20.0339348,15.8163578 C20.8020152,15.8163578 21.4246541,16.4297891 21.4246541,17.1865112 L21.4246541,25.5324984 L21.4246541,25.5324984 Z M28.2590628,30.2159744 C26.3945771,30.2159744 24.4923513,29.4414696 23.2948082,28.1947668 C22.7667436,27.6451182 22.7910585,26.7777316 23.348808,26.257623 C23.9068559,25.7373674 24.7874111,25.7613227 25.3150281,26.3108243 C25.9842083,27.0074377 27.1672818,27.4755208 28.2590628,27.4755208 C29.3767995,27.4755208 30.682193,27.1539617 30.682193,26.2482173 C30.6893532,25.3943514 30.227968,25.0745559 28.0843838,24.4348179 C26.1933457,23.8706198 23.3355318,23.0177827 23.3355318,19.7723578 C23.3355318,17.3474377 25.4695691,15.7181853 28.6458626,15.7181853 C30.0598525,15.7181853 31.6016817,16.1405623 32.6697446,16.8207157 C33.314759,17.2314824 33.4997308,18.0797636 33.0827985,18.7153866 C32.6657169,19.3508626 31.8047032,19.533099 31.1596887,19.1223323 C30.5462984,18.7316997 29.5125449,18.458639 28.6458626,18.458639 C27.4793471,18.458639 26.1171195,18.8028307 26.1171195,19.7723578 C26.1171195,20.825361 26.7419959,21.1708754 28.890801,21.8120831 C30.7221708,22.3584984 33.4897364,23.1842939 33.4637806,26.2595335 C33.4636315,28.6214058 31.3721079,30.2159744 28.2590628,30.2159744 L28.2590628,30.2159744 Z"id=Shape></path></g></g></g></g></g></svg></div>
+        <div class="logo-item"><svg height=46px version=1.1 viewBox="0 0 45 46"width=45px xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink><g id=Page-1  fill-rule=evenodd stroke-width=1><g id=Index transform="translate(-687.000000, -5672.000000)"><g id=LogosList transform="translate(0.000000, 5605.000000)"><g id=Logos transform="translate(228.000000, 67.000000)"><g id=snakes transform="translate(459.000000, 0.000000)"><g id=Group><path d="M30.6854516,7.1680061 C30.6854516,3.20920122 27.4282229,0 23.4087156,0 L19.0433003,0 C15.0239353,0 11.7674184,3.20920122 11.7674184,7.1680061 L11.7674184,9.68580488 L21.1529117,9.68580488 L21.1529117,11.7131707 L7.39602443,11.7189207 C3.3776559,11.7189207 0.120427212,14.928122 0.120427212,18.888189 L0.120427212,23.1889085 C0.120427212,27.1478537 3.37779825,30.3570549 7.39602443,30.3570549 L11.573112,30.3570549 L11.573112,22.0818232 L30.6884409,22.0818232 L30.6854516,7.1680061 L30.6854516,7.1680061 Z M15.546356,7.52562805 C14.9610171,7.52562805 14.4867104,7.05833537 14.4867104,6.4824939 C14.4867104,5.90609146 14.9610171,5.43851829 15.546356,5.43851829 C16.1306984,5.43851829 16.6051475,5.90609146 16.6051475,6.4824939 C16.6050051,7.05833537 16.1306984,7.52562805 15.546356,7.52562805 L15.546356,7.52562805 Z"id=Shape></path><path d="M36.9728624,15.5994695 L32.7957748,15.5994695 L32.7957748,23.8747012 L13.6804459,23.8747012 L13.6834352,38.7886585 C13.6834352,42.7474634 16.9408063,45.9566646 20.9601713,45.9566646 L25.3255865,45.9566646 C29.3449515,45.9566646 32.6014684,42.7474634 32.6014684,38.7886585 L32.6014684,36.2708598 L23.2159751,36.2708598 L23.2159751,34.2434939 L36.9728624,34.2377439 C40.9910886,34.2377439 44.2484596,31.0285427 44.2484596,27.0686159 L44.2484596,22.7677561 C44.2486019,18.8086707 40.9912309,15.5994695 36.9728624,15.5994695 L36.9728624,15.5994695 Z M28.8226732,38.4310366 C29.4081544,38.4310366 29.8823188,38.8983293 29.8823188,39.4741707 C29.8823188,40.0505732 29.4081544,40.5181463 28.8226732,40.5181463 C28.2383308,40.5181463 27.7638817,40.0505732 27.7638817,39.4741707 C27.7638817,38.8983293 28.2383308,38.4310366 28.8226732,38.4310366 L28.8226732,38.4310366 Z"id=Shape></path></g></g></g></g></g></g></svg></div>
+        <div class="logo-item"><svg height=46px version=1.1 viewBox="0 0 46 46"width=46px xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink><g id=Page-1  fill-rule=evenodd stroke-width=1><g id=Index transform="translate(-838.000000, -5672.000000)"><g id=LogosList transform="translate(0.000000, 5605.000000)"><g id=Logos transform="translate(228.000000, 67.000000)"><g id=dribbble11 transform="translate(610.000000, 0.000000)"><path d="M22.9882183,0.0308247423 C10.312618,0.0312989691 0.000474208765,10.3296082 0,22.9890928 C0.000474208765,35.6485773 10.312618,45.9473608 22.9882183,45.9473608 C35.6638186,45.9473608 45.9759624,35.6485773 45.9764366,22.9890928 C45.9759624,10.3296082 35.6638186,0.0312989691 22.9882183,0.0308247423 L22.9882183,0.0308247423 Z M38.1131069,10.8678557 C40.7345329,14.1167835 42.3297712,18.2221649 42.4037478,22.6922268 C41.5312037,22.5158144 37.8352205,21.8243918 33.4189143,21.8243918 C31.9943912,21.8243918 30.4949431,21.8969485 28.9917013,22.0814227 C28.8650875,21.7741237 28.7370512,21.4649278 28.6047469,21.1547835 C28.2139989,20.2376289 27.7952726,19.3280619 27.3590005,18.4331959 C34.1539379,15.6328866 37.4345141,11.7465979 38.1131069,10.8678557 L38.1131069,10.8678557 Z M22.9882183,3.62356701 C27.8858464,3.62356701 32.3633256,5.44412371 35.7833192,8.44218557 C35.2412986,9.18150515 32.3059463,12.8496495 25.7528554,15.3279588 C22.7202904,9.78092784 19.398458,5.1908866 18.6084262,4.12435052 C20.0168262,3.79760825 21.4821313,3.62356701 22.9882183,3.62356701 L22.9882183,3.62356701 Z M14.6459377,5.50814433 C15.3155205,6.42909278 18.6397239,11.0684536 21.7505334,16.5713814 C13.4016139,18.7651546 5.98688566,18.9093196 4.1981702,18.9093196 L4.00848669,18.9093196 C5.29311824,12.9838557 9.29733705,8.05995876 14.6459377,5.50814433 L14.6459377,5.50814433 Z M3.56699833,23.0189691 C3.56699833,22.8596289 3.570792,22.6998144 3.57553409,22.54 C3.69171524,22.5418969 3.86195618,22.5437938 4.0848343,22.5437938 C6.49381483,22.5437938 14.8598059,22.3431959 23.480447,19.784268 C24.0034993,20.8085979 24.5023669,21.8471546 24.9642462,22.8847629 C24.7484812,22.9473608 24.5327163,23.0109072 24.3193223,23.0796701 C14.6136915,26.2152577 9.27694607,34.5142268 8.45656491,35.8700412 C5.41593831,32.4442268 3.56699833,27.9442887 3.56699833,23.0189691 L3.56699833,23.0189691 Z M22.9882183,42.4148454 C18.5320785,42.4148454 14.424008,40.9058557 11.1429576,38.3768041 C11.6973076,37.2889278 15.72334,30.038 26.3612653,26.3352371 C26.3688526,26.332866 26.3764399,26.3300206 26.3835531,26.3271753 C29.0490805,33.272701 30.17912,39.1014227 30.4906752,40.9068041 C28.1812785,41.8775464 25.6461584,42.4148454 22.9882183,42.4148454 L22.9882183,42.4148454 Z M33.9870164,38.9951959 C33.7266758,37.5013814 32.6805713,32.0382887 30.2644776,25.3758763 C31.6197663,25.166268 32.9385408,25.0832784 34.1743289,25.0832784 C38.2330817,25.0828041 41.4083836,25.9715052 42.1462524,26.1958144 C41.2689662,31.4886598 38.2397206,36.0654227 33.9870164,38.9951959 L33.9870164,38.9951959 Z"id=Shape></path></g></g></g></g></g></svg></div>
+        <div class="logo-item"><svg height=42px version=1.1 viewBox="0 0 67 42"width=67px xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink><g id=Page-1  fill-rule=evenodd stroke-width=1><g id=Index transform="translate(-990.000000, -5674.000000)"><g id=LogosList transform="translate(0.000000, 5605.000000)"><g id=Logos transform="translate(228.000000, 67.000000)"><g id=behance2 transform="translate(762.000000, 2.500000)"><path d="M60.3162519,5.83179104 L43.5811131,5.83179104 L43.5811131,1.7363806 L60.3176494,1.7363806 L60.3176494,5.83179104 L60.3162519,5.83179104 L60.3162519,5.83179104 Z M32.4401409,22.6257276 C33.5199675,24.2735299 34.0595703,26.2742687 34.0595703,28.6232015 C34.0595703,31.0522985 33.4511779,33.2314179 32.2134301,35.1562761 C31.4259983,36.4300299 30.4483468,37.5059739 29.2736433,38.3721754 C27.950646,39.3739216 26.3843229,40.0608246 24.5836801,40.4278358 C22.777292,40.795459 20.8221443,40.9811828 18.7160631,40.9811828 L0,40.9811828 L0,0.0377873134 L20.0701167,0.0377873134 C25.1290283,0.118869403 28.715562,1.56289552 30.8334446,4.39877985 C32.1042673,6.13806716 32.7339332,8.22508955 32.7339332,10.6509739 C32.7339332,13.1541157 32.0966585,15.1569963 30.8134133,16.6787388 C30.0995849,17.5319366 29.0450691,18.3080299 27.6490896,19.0085485 C29.763556,19.7711791 31.3679231,20.9721119 32.4401409,22.6257276 L32.4401409,22.6257276 Z M9.58427652,16.1797015 L18.3781709,16.1797015 C20.1853354,16.1797015 21.6462225,15.8412985 22.7713913,15.1647985 C23.8957837,14.4893694 24.4568153,13.2887425 24.4568153,11.5649067 C24.4568153,9.66039552 23.7139492,8.39627985 22.2246456,7.78785821 C20.944506,7.36516045 19.3065982,7.14746269 17.319152,7.14746269 L9.58427652,7.14746269 L9.58427652,16.1797015 L9.58427652,16.1797015 Z M25.3035646,28.0383396 C25.3035646,25.911541 24.4212558,24.4412015 22.6602099,23.6522575 C21.6754154,23.2038582 20.2859578,22.9746866 18.5044146,22.9583172 L9.58427652,22.9583172 L9.58427652,33.8695187 L18.3663695,33.8695187 C20.1705837,33.8695187 21.567029,33.6368284 22.5748051,33.1514067 C24.3922182,32.2588918 25.3035646,30.5602985 25.3035646,28.0383396 L25.3035646,28.0383396 Z M66.5254879,21.3775224 C66.7276642,22.7170597 66.8191249,24.6605821 66.7820127,27.2008993 L45.1081501,27.2008993 C45.2277167,30.1483097 46.2604931,32.2094776 48.2192123,33.3889925 C49.4004376,34.1286754 50.8325977,34.4898731 52.5096364,34.4898731 C54.2779806,34.4898731 55.7193023,34.0494291 56.8287877,33.1440634 C57.433298,32.6641493 57.9665342,31.9867313 58.4275646,31.1320037 L66.3717593,31.1320037 C66.1636823,32.8728209 65.2071491,34.6384216 63.4881843,36.4326306 C60.8249536,39.2844254 57.0898156,40.7143769 52.2928636,40.7143769 C48.3300832,40.7143769 44.8376499,39.5083955 41.8062471,37.105153 C38.7849375,34.6934963 37.267528,30.7822799 37.267528,25.3566642 C37.267528,20.2688396 38.6298115,16.3746045 41.3635399,13.6640149 C44.1073617,10.9483769 47.648398,9.59675373 52.0132019,9.59675373 C54.6003448,9.59675373 56.9325156,10.0523433 59.0131306,10.9682649 C61.0872239,11.8851045 62.8013749,13.3280597 64.1513911,15.3112052 C65.3731449,17.0576828 66.1588686,19.0770858 66.5254879,21.3775224 L66.5254879,21.3775224 Z M58.7059841,22.1415299 C58.5603302,20.1034627 57.8696387,18.5609142 56.6259902,17.506694 C55.3925903,16.4495672 53.8517333,15.9188619 52.0132019,15.9188619 C50.0122462,15.9188619 48.4671966,16.4861306 47.3693573,17.6010858 C46.2640646,18.7137463 45.5763234,20.2264627 45.2944877,22.1416828 L58.7059841,22.1416828 L58.7059841,22.1415299 L58.7059841,22.1415299 Z"id=Behance></path></g></g></g></g></g></svg></div>
+        <div class="logo-item"><svg height=46px version=1.1 viewBox="0 0 46 46"width=46px xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink><g id=Page-1  fill-rule=evenodd stroke-width=1><g id=Index transform="translate(-1164.000000, -5672.000000)"><g id=LogosList transform="translate(0.000000, 5605.000000)"><g id=Logos transform="translate(228.000000, 67.000000)"><g id=pinterest11 transform="translate(936.000000, 0.000000)"><path d="M22.9713146,0 C10.284618,0 0,10.284618 0,22.9713146 C0,35.6579251 10.2843596,45.9425431 22.9713146,45.9425431 C35.6579251,45.9425431 45.9426292,35.6579251 45.9426292,22.9713146 C45.9425431,10.284618 35.6579251,0 22.9713146,0 L22.9713146,0 Z M25.1986105,30.6934569 C23.1114682,30.5313371 22.235573,29.4975431 20.5996442,28.503633 C19.6996292,33.2225955 18.6002809,37.7468764 15.3441011,40.1099326 C14.3389064,32.977779 16.8198914,27.6209326 17.9718727,21.934161 C16.0074831,18.6272434 18.2082472,11.9724045 22.3516929,13.6127266 C27.4495955,15.6293184 17.9368989,25.9062697 24.3227154,27.1898764 C30.9906479,28.5299064 33.712573,15.6207903 29.5783446,11.4228165 C23.60403,5.3612397 12.1884494,11.2846442 13.5922247,19.9633109 C13.9338652,22.0850824 16.1258427,22.7287378 14.4681199,25.6568876 C10.6446929,24.8093333 9.50373783,21.7938352 9.65061049,17.7734007 C9.88698502,11.1927303 15.5632472,6.58549438 21.256824,5.94829963 C28.4569438,5.14235206 35.2148951,8.59123221 36.1479888,15.364603 C37.1984944,23.0092172 32.8976667,31.2888727 25.1986105,30.6934569 L25.1986105,30.6934569 Z"id=Shape></path></g></g></g></g></g></svg></div>
+        <div class="logo-item"><svg height=46px version=1.1 viewBox="0 0 46 46"width=46px xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink><g id=Page-1  fill-rule=evenodd stroke-width=1><g id=Index transform="translate(-1325.000000, -5672.000000)"><g id=LogosList transform="translate(0.000000, 5605.000000)"><g id=Logos transform="translate(228.000000, 67.000000)"><g id=html25 transform="translate(1097.000000, 0.000000)"><path d="M0,0.196545455 L0,45.8055455 L46,45.8055455 L46,0.196545455 L0,0.196545455 L0,0.196545455 Z M42.2091818,3.98736364 L42.2091818,42.0168182 L3.79081818,42.0168182 L3.79081818,3.98736364 C7.084,3.98527273 38.9139091,3.98527273 42.2091818,3.98736364 L42.2091818,3.98736364 Z"id=Shape></path><polygon id=Shape points="18.0487273 29.5738182 5.95909091 24.3130909 5.95909091 21.4025455 18.0487273 16.169 18.0487273 19.5980909 9.62445455 22.8243636 18.0487273 26.174"></polygon><polygon id=Shape points="19.1694545 31.8821818 23.5457273 13.6536364 26.0799091 13.6536364 21.6555455 31.8821818"></polygon><path d="M27.1839091,29.5738182 L27.1839091,26.1760909 L35.6249091,22.8452727 L27.1839091,19.5541818 L27.1839091,16.1710909 L39.2860909,21.4088182 L39.2860909,24.2942727 C39.2860909,24.2963636 27.1839091,29.5738182 27.1839091,29.5738182 L27.1839091,29.5738182 Z"id=Shape></path></g></g></g></g></g></svg></div>
+    </div>
+
+</section>
+<!-- Logo-list end -->
+
+<!-- Contact Start -->
+<section class="contact" id="contact">
+
+    <div class="contact__content">
+        <div class="content__title">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="content__info">
+            <p>Mauris lacinia porta faucibus. Fusce eu est ac eros vulputate mollis in ac felis. Aenean commodo scelerisque mi sed imperdiet. Donec at hendrerit nisi, eget vestibulum nisi. Sed sit amet magna luctus, facilisis erat quis.</p>
+        </div>
+    </div>
+
+    <form action="" class="contact__form">
+        <input type="text" class="form__input--small" placeholder="Your Name">
+        <input type="email" class="form__input--small" placeholder="Valid Email">
+        <textarea class="form__input--large" name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <button class="button">Send Message</button>
+    </form>
+
+    <div class="contact__map">
+
+    </div>
+
+
+</section>
+<!-- Contact End -->
+
+<!-- Footer Start -->
+<footer class="footer">
+    
+    <div class="footer__header">
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Google+</a></li>
+            <li><a href="#">Behance</a></li>
+        </ul>
+    </div>
+
+    <div class="footer__footer">
+        <div class="footer__info">
+            <p>© 2017 Joshua Gretton, All rights prc.... </p>
+        </div>
+    </div>
+
+</footer>
+<!-- Footer End -->
+
+</div>
+
+<nav class="side-bar__nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li>
+                <input type="text" class="search__input">
+                <svg  class="search" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Index" transform="translate(-1476.000000, -31.000000)" fill="#FFFFFF"><g id="Header"><g id="Menu" transform="translate(801.000000, 31.000000)"><g id="Search" transform="translate(675.000000, 0.000000)"><path d="M22.472,21.4906667 L15.5746667,14.5933333 C16.8746667,13.0773333 17.6666667,11.112 17.6666667,8.96266667 C17.6666667,4.184 13.7786667,0.296 9,0.296 C6.68533333,0.296 4.508,1.19733333 2.86933333,2.83333333 C1.23333333,4.47066667 0.332,6.648 0.333333333,8.96266667 C0.333333333,13.7413333 4.22133333,17.6293333 9,17.6293333 C11.1493333,17.6293333 13.116,16.8373333 14.632,15.5373333 L21.5293333,22.4346667 L22.472,21.4906667 L22.472,21.4906667 Z M9,16.296 C4.95733333,16.296 1.66666667,13.0066667 1.66666667,8.96266667 C1.66533333,7.00266667 2.428,5.16133333 3.81333333,3.77733333 C5.19733333,2.392 7.04,1.62933333 9,1.62933333 C13.0426667,1.62933333 16.3333333,4.91866667 16.3333333,8.96266667 C16.3333333,13.0053333 13.0426667,16.296 9,16.296 L9,16.296 Z" id="Shape"></path></g></g></g></g></g></svg></a></li>
+        </ul>
+    </nav>
+
+<script type="text/javascript" src="resources/js/scroll.js"></script>
+<script type="text/javascript" src="resources/js/slider.js"></script>
+<script type="text/javascript" src="resources/js/filter.js"></script>
+<script type="text/javascript" src="resources/js/header.js"></script>
+<script>
+$('.mobile__menu').on('click', function(e) {
+    $('.side-bar__nav').toggleClass("open");
+    $('.content').toggleClass("open-2");
+    $('.search__input').removeClass('search__open')
+    });
+
+    $('.search').on('click', function(e){
+        $('.search__input').toggleClass('search__open');
+        $('.search__open').focus();
+      });
+
+
+    </script>
+</body>
+</html>

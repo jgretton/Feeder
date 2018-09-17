@@ -1,0 +1,19 @@
+.container-fluid{
+    display:grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    max-width: $container-fluid;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 70px);
+    grid-template-rows: repeat(2, 290px);
+    grid-column-gap: 28px;
+    grid-row-gap: 10px;
+
+    max-width: $container-lg;
+
+    @include push--auto;
+}

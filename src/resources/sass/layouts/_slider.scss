@@ -1,0 +1,135 @@
+.slider{
+    height: 584px;
+    width:100%;
+    position: relative;
+    background-color: #F7F7F7;
+}
+
+.slider__wrapper{
+    min-height:inherit;
+    max-width:1370px;
+    position: relative;
+    @include push--auto;
+    @include center;
+    padding: 0 120px;
+
+    @include flexbox;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media(max-width:$breakpoint-sm){
+        padding: 40px;
+    }
+    
+}
+
+.slider__content-left{
+    max-width: 559px;
+    height:100%;
+    align-self: center;
+    
+    @media(max-width:$breakpoint-lg){
+        padding-right: 10px;
+    }
+   
+    @media(max-width:$breakpoint-sm){
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .content__title h1, .content__info p{
+        text-align: left;
+    }
+}
+.slider__content-right{
+    max-width: 559px;
+    height:100%;
+    align-self: center;
+
+    @media(max-width:$breakpoint-md){
+        display:none;
+    }
+    
+
+    img{
+        object-fit: cover;
+        height:100%;
+        width:100%;
+    }
+}
+
+.arrow{
+    height:100%;
+    width:120px;
+    display: block;
+    position: absolute;
+    top:0;
+    transition: $transition;
+    svg{position: relative; top:50%;}
+
+    @media(max-width:$breakpoint-sm){
+        width:40px;
+    }
+   
+
+    &--left{
+        left:0; 
+
+        svg{
+            left:40px;
+            position: absolute;
+
+            @media(max-width:$breakpoint-sm){
+                left:0;
+                width: 25px !important;
+                height:25px !important;
+            }
+        }
+        &:hover{
+            background: red; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(right, transparent , darken(#f7f7f7, 20%)); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(left, transparent , darken(#f7f7f7, 20%)); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(left, transparent , darken(#f7f7f7, 20%)); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to left, transparent , darken(#f7f7f7, 20%)); /* Standard syntax */
+
+            cursor: pointer;
+
+            @media(max-width:$breakpoint-md) {
+                background: none;
+                
+            }
+        }
+    }
+
+    &--right{
+        right:0; 
+        transition: $transition;
+        
+        svg{
+            right:40px;
+            position: absolute;
+
+            @media(max-width:$breakpoint-sm){
+                right:0;
+                width: 25px !important;
+                height:25px !important;
+            }
+        }
+
+        &:hover{
+            background: red; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(left, transparent , darken(#f7f7f7, 20%)); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(right,  transparent, darken(#f7f7f7, 20%)); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(right,  transparent, darken(#f7f7f7, 20%)); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to right,  transparent, darken(#f7f7f7, 20%)); /* Standard syntax */
+
+            cursor: pointer;
+
+            @media(max-width:$breakpoint-md) {
+                background: none;
+                
+            }
+        }
+    }
+
+}

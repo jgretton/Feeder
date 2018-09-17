@@ -1,0 +1,41 @@
+.about{
+    min-height: 370px;
+    width: 100%;
+    background-color:white;
+}
+
+.about__content{
+    min-height:100%;
+    position: relative;
+    max-width: 902px;
+    height: auto;
+    @include push--auto;
+    padding-top: 75px;
+    text-align: center;
+    
+    @media(max-width: $breakpoint-md){
+        padding:75px 15px 20px 15px;
+        text-align: left;
+    }
+}
+
+.content__title{
+    h1{
+        font-size: 30px;
+        font-weight: 300;
+        color:#333;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+    }
+}
+
+.content__info{
+    margin-top: 39px;
+    p{
+        font-size: 15px;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif;
+        color:#777777;
+        line-height: 2;
+    }
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:300,400|Raleway:300,400,500,700|Dosis:400');
+
+
+
+h1{
+    @include font($font-family-h, $color-gray-darker, $font-weight-normal, $line-height);
+    @include fontSize($font-h-lg);
+    margin: 0;
+    padding: 0;
+}
+.large{
+    @include fontSize(150);
+    @media(max-width: $breakpoint-md){
+        @include fontSize(100);
+    }
+    @media(max-width: $breakpoint-sm){
+        @include fontSize($font-h-lg);
+    }
+}
+.special{
+    font-family: 'Old Standard TT', sans-serif;
+}
+h2{
+    @include font($font-family-h, $color-gray-darker, $font-weight-normal, $line-height);
+    margin: 0;
+    padding: 0;
+    @include fontSize($font-h-md);
+}
+
+p{
+    @include font($font-family-p,  $color-gray-dark, $font-weight-light, $line-height);
+    @include fontSize($font-p);
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    @include font($font-family-h, $color-gray-dark, $font-weight-normal, $line-height);
+    text-decoration: none;
+}
+.white{
+    color:$color-white !important;
+}

@@ -1,0 +1,132 @@
+.header{
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    display : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 5;
+    transition: height 999999ms;
+    transition: $transition;
+    background-color: rgba(255,255,255, 0);
+    box-shadow: none;
+
+
+}
+
+.logo{
+    padding-left: 100px;
+    align-self: center;
+
+    svg{
+        height: 26px;
+        fill: #fff;
+    }
+    @media(max-width:$breakpoint-lg){
+        padding-left:30px;
+    }
+}
+
+.header__nav{
+    height: 23px;
+    width: auto;
+    margin-right: 100px;
+    align-self: center;
+
+    @media(max-width: $breakpoint-lg){
+        display: none;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        width: auto;
+        position: relative;
+    }
+
+    ul li{
+        margin-right: 25px;
+        &:last-of-type {
+            margin-right: 0px;
+            padding-left:50px;
+        }
+
+        svg{
+            &:hover{
+            cursor: pointer;
+            }
+       }
+    }
+
+    ul li a{
+        color: white;
+        cursor: pointer;
+        &:hover{ text-decoration: underline;}
+    }
+}
+
+
+.search__input{
+    border: none;
+    background-color: white;
+    border-radius: 25px;
+    margin: -10px 0 0 0;
+    padding: 0;
+    height: 23px;
+    width: 0%;
+    position: absolute;
+    transform: translateX(calc(-100% - 20px));
+    transition: width ease 0.4s;
+    padding: 10px 0;
+
+    font-family: 'Open Sans', sans-serif;
+    color: #777777;
+    font-size: 16px;
+    outline: none;
+
+
+  }
+  
+  .search__open{
+      width:85%;
+      transition: width ease 0.4s;
+    padding-left: 20px;
+  }
+
+  .scrolled{
+    background-color:rgba(255,255,255,0.8);
+    box-shadow:  $box-shadow;
+    height:70px;
+    transition: $transition;
+
+    .logo{
+        .svg{
+            fill: #777 !important;
+        }
+    }
+    .header__nav ul li a, .header__nav ul li{
+        color: #777;
+        svg{fill:#777777;}
+
+        &:hover{color: black;}
+    }
+
+    .search__input{
+        // border: 1px solid black;
+        &::after{
+            @include pseudo;
+            height: 2px;
+            width: auto;
+            background-color: pink;
+        }
+    }
+
+  }
+
+  .search{
+     fill: #fff;
+  }

@@ -1,0 +1,309 @@
+.portfolio{
+    min-height: 1385px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.portfolio__header{
+    padding-top: 87px;
+    max-width: 100%;
+    min-height: 220px;
+    padding-bottom: 30px;
+}
+
+.header__content{
+    height: auto;
+    max-width:  100%;
+    position: relative;
+
+    .content__info p{
+        text-align: center;
+    }
+}
+
+.content__nav{
+    max-width:690px;
+    min-height:21px;
+    position: relative;
+    @include push--auto;
+
+    padding-top: 55px;
+
+    @media(max-width: 667px){
+        min-height: auto;
+        padding-top: 20px;
+    }
+
+    ul{
+        width: auto;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        @include flexbox;
+        flex-direction: row;
+
+        @media(max-width: 667px){
+            flex-direction: column;
+            @include push--auto;
+            text-align: center;
+        }
+    }
+
+    ul li{
+        margin-right: 53px;
+        width: auto;
+        @media(max-width: 667px){
+            margin: 20px 0 0 0;
+        }
+        &:last-of-type{
+            margin-right: 0;
+        }
+    }
+}
+
+.portfolio__content{
+    min-height: 800px;
+    position: relative;
+    background-color: #e3e3e3;
+
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(8, 100px);
+
+    @media(max-width: $breakpoint-lg){
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(16, 100px);
+    }
+
+    @media(max-width:$breakpoint-sm){
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(16, 100px);
+    }
+}
+
+.portfolio__tile{
+    height: auto;
+    width: auto;
+    position: relative;
+    padding: 23px 18px;
+    overflow:hidden;
+    transform: scale(0);
+
+    &:hover{
+        cursor: pointer;
+        
+        .tile__hidden-content{
+            opacity: 1;
+            transition: $transition;
+        }
+    }
+}
+
+#tile_1{
+    background-color: coral;
+    grid-column: 1 / 2;
+    grid-row: 1 / span 4;
+
+    background:url('../images/portfolio-1.jpg') no-repeat center center;
+    background-size: cover;
+}
+#tile_2{
+    background-color: red;
+    grid-column: 1 / 2;
+    grid-row: 5 / span 4;
+    background:url('../images/portfolio-2.jpg') no-repeat center center;
+    background-size: cover;
+}
+#tile_3{
+    background-color: lightblue;
+    grid-column: 2 / 3;
+    grid-row: 1 / span 5;
+    background:url('../images/portfolio-3.jpg') no-repeat center center;
+    background-size: cover;
+
+    @media(max-width:$breakpoint-sm){
+        grid-column: 1 / 2;
+        grid-row: 9 / span 5;
+    }
+}
+
+#tile_4{
+    background-color: lightcyan;
+    grid-column: 2 / 3;
+    grid-row: 6 / span 3;
+    background:url('../images/portfolio-4.jpg') no-repeat center center;
+    background-size: cover;
+
+    @media(max-width:$breakpoint-sm){
+        grid-column: 1 / 2;
+        grid-row: 14 / span 5;
+    }
+}
+#tile_5{
+    background-color: green;
+    grid-column: 3 / 4;
+    grid-row: 1 / span 3;
+    background:url('../images/portfolio-6.jpg') no-repeat center center;
+    background-size: cover;
+
+    @media(max-width:$breakpoint-lg){
+        grid-column: 1 / 2;
+        grid-row: 9 / span 3;
+    }
+  
+    @media(max-width:$breakpoint-sm){
+        display: none;
+    }
+}
+#tile_6{
+    background-color: yellow;
+    grid-column: 3 / 4;
+    grid-row: 4 / span 5;
+    background:url('../images/portfolio-5.jpg') no-repeat center center;
+    background-size: cover;
+
+    @media(max-width:$breakpoint-lg){
+        grid-column: 1 / 2;
+        grid-row: 12 / span 5;
+    }
+   
+    @media(max-width:$breakpoint-sm){
+        display: none;
+    }
+}
+#tile_7{
+    background-color: brown;
+    grid-column: 4 / 5;
+    grid-row: 1 / span 4;
+    background:url('../images/portfolio-7.jpg') no-repeat center center;
+    background-size: cover;
+
+    @media(max-width:$breakpoint-lg){
+        grid-column: 2 / 3;
+        grid-row: 9 / span 4;
+    }
+
+    @media(max-width:$breakpoint-sm){
+        display: none;
+    }
+}
+#tile_8{
+    background-color: pink;
+    grid-column: 4 / 5;
+    grid-row: 5 / span 4;
+    background:url('../images/portfolio-8.jpg') no-repeat center center;
+    background-size: cover;
+
+    @media(max-width:$breakpoint-lg){
+        grid-column: 2 / 3;
+        grid-row: 13 / span 4;
+    }
+
+    @media(max-width:$breakpoint-sm){
+        display: none;
+    }
+}
+
+.tile__hidden-content{
+        display: block;
+        position: absolute;
+        width: calc(100% - 36px);
+        height:calc(100% - 46px);
+        background-color: rgba(63, 80, 98, .9);
+        text-align: center;
+
+        // transform: translateY(calc(100% + 46px));
+        opacity: 0;
+        transition: $transition;
+}
+.hidden-content-wrap{
+    height: auto;
+    width: auto;
+    position: relative;
+    @include center;
+}
+.hidden-content__title{
+    position: relative;
+    margin-bottom: 16px;
+    h1{
+        color:white;
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        letter-spacing: 5.56px;
+    }
+}
+.hidden-content__info{
+    position: relative;
+    width: auto;
+    p{
+        color:white;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    &:after{
+        @include pseudo;    
+        height: 2px;
+        width: 90px;
+        margin: 0 auto;
+        background-color:white;
+        margin-top:20px;
+
+        left:50%;
+        transform: translateX(-50%);
+    }
+}
+
+.portfolio__footer{
+    height:250px;
+    width:100%;
+    position: relative;
+}
+
+
+
+
+.scale-anm {
+    transform: scale(1);
+  }
+
+  .content__nav-item{
+      width: auto;
+      font-size: 11px;
+      font-weight: bold;
+      font-family: 'Raleway', sans-serif;
+      color: #3498DB;
+      text-transform: uppercase;
+      letter-spacing: 3.4px;
+      border:none;
+      background-color: transparent;
+      position: relative;
+
+
+      &:hover{
+          cursor: pointer;
+          &:focus{
+              border: none;
+              outline: none;
+          }
+
+        &:after{
+            @include pseudo;
+            height: 2px;
+            //To account for the letter spacing
+            width: calc(100% - 3.4px);
+            background-color: #3498DB;
+            margin-top: 8px;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);    
+
+            @media(max-width: 610px){
+               margin-top: 5px;
+           }
+
+        }
+   }
+  }
